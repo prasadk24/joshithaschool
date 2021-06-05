@@ -24,6 +24,37 @@
 
         gtag("config", "UA-172071723-1");
     </script>
+    <style>
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: 270px 260px 270px 240px;
+            gap: 20px;
+        }
+        
+        .pdf-grid>a {
+            font-size: 14px;
+            border: 1px solid cdcdcd;
+            background-color: #f7d8f7;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            border-left: 10px solid #6c196b;
+        }
+        
+        .pdf-grid>a:hover {
+            color: #6c196b;
+            font-weight: bold;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .pdf-grid {
+                display: grid;
+                grid-template-columns: 150px 150px;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -119,12 +150,35 @@
             <div class="col-md-12 mb-5">
                 <h2>CBSE Mandatory Data</h2>
                 <hr />
-                <object data="images/Joshitha-Mandatory-Public-Disclosure.pdf" type="application/pdf" width="100%" height="600px">
+                <div class="pdf-grid">
+                    <a href="pdf/Academic-Calendar.pdf" target="_blank">Academic Calendar</a>
+                    <a href="pdf/Building-Safety.pdf" target="_blank">Building Safety</a>
+                    <a href="pdf/Fee-Structure.pdf" target="_blank">Fee Structure</a>
+                    <a href="pdf/Fire-Certificate.pdf" target="_blank">Fire Certificate </a>
+                    <a href="pdf/Health-Sanitation.pdf" target="_blank">Health & Sanitation </a>
+                    <a href="pdf/NOC.pdf" target="_blank">NOC </a>
+                    <a href="pdf/PTA.pdf" target="_blank">PTA </a>
+                    <a href="pdf/Recognition.pdf" target="_blank">Recognition </a>
+                    <a href="pdf/SMC.pdf" target="_blank">SMC </a>
+                    <a href="pdf/Society-Registered-Document.pdf" target="_blank">Society Registered Document </a>
+                    <a href="pdf/Address-of-School-and-Authorities.pdf" target="_blank">Address of School & Authorities</a>
+                    <a href="pdf/Curriculum.pdf" target="_blank">Curriculum</a>
+                    <a href="pdf/Declaration.pdf" target="_blank">Declaration</a>
+                    <a href="pdf/Details-of-Teachers.pdf" target="_blank">Details of Teachers</a>
+                    <a href="pdf/Grievance-Committee.pdf" target="_blank">Grievance Committee</a>
+                    <a href="pdf/School-Annual-Report.pdf" target="_blank">School Annual Report</a>
+                    <a href="pdf/Sexual-Harassment-Committee.pdf" target="_blank">Sexual Harassment Committee</a>
+                    <a href="pdf/Student-Details.pdf" target="_blank">Student Details</a>
+                    <a href="pdf/Teachers-Training-Programs.pdf" target="_blank">Teachers Training Programs</a>
+                    <a href="pdf/Transfer-Certificate.pdf" target="_blank">Transfer Certificate</a>
+                </div>
+
+                <!-- <object data="images/Joshitha-Mandatory-Public-Disclosure.pdf" type="application/pdf" width="100%" height="600px">
                    
                     <p>Your web browser doesn't have a PDF plugin.
                     Instead you can <a href="images/Joshitha-Mandatory-Public-Disclosure.pdf">click here to
                     download the PDF file.</a></p>
-                </object>
+                </object> -->
 
             </div>
         </div>
