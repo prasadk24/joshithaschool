@@ -347,3 +347,58 @@ h2 {
         display: block !important;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .cbse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-node {
+        display: grid;
+        grid-template-columns: 80px minmax(200px, auto) !important;
+        grid-gap: 10px;
+    }
+    .item-a {
+        place-self: center !important;
+    }
+}
+
+.header-node {
+    display: grid;
+    grid-template-columns: 140px minmax(200px, auto) auto;
+    grid-gap: 10px;
+}
+
+.item-a img {
+    max-width: 100%;
+    justify-self: end;
+}
+
+.item-a,
+.item-c {
+    height: auto;
+    justify-self: center;
+    place-self: end;
+}
+
+.item-b {
+    height: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    justify-self: start;
+    place-self: start;
+}
+
+.item-c {
+    place-self: center;
+}
+
+.cbse {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 0, 121);
+    letter-spacing: 0px;
+}
