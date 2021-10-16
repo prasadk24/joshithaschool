@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Joshita School in Beeramguda, Hyderabad is one of the Raising leaders for the 21st Century">
+    <meta name="keywords" content="School infrastructure, Joshitha School infrastructure, Schools in Hyderabad, School, Schools in Beeramguda, School Beeramguda">
+    <meta name="description" content="">
+    <title>Joshitha School : Overview of the campus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172071723-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172071723-1');
+    </script>
+</head>
+
+<body>
+    <header class="bg-primary"></header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive"></div>
+        </div>
+    </nav>
+    <br><br>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <h2>Open Air Auditorium</h2>
+                <hr>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div>Our open-air Auditorium serves as the stage for the many student-run productions and events hosted by the school. The auditorium is equipped with the latest in sound and lighting technology to provide our students with the best
+                            platform to showcase their abilities.
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="./images/auditorium-1.jpg" style="width:100%" alt="Joshitha School Multipurpose hall">
+                            </div>
+                            <div class="mySlides">
+                                <img src="./images/auditorium-2.jpg" style="width:100%" alt="Joshitha School Multipurpose hall">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                            </div>
+                        </div>
+                        <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }
+
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+
+                            function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                if (n > slides.length) {
+                                    slideIndex = 1
+                                }
+                                if (n < 1) {
+                                    slideIndex = slides.length
+                                }
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-gray">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Joshithaschool.com 2022</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
