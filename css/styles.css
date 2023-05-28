@@ -319,14 +319,15 @@ h2 {
 }
 
 .grid-container-result {
+    width: 780px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5px;
 }
 
 .grid-item-result {
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
     border: 1px solid #ce007f;
     border-radius: 10px 10px;
     text-align: center;
@@ -334,8 +335,8 @@ h2 {
 }
 
 .grid-item-result img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 0px;
     margin: 0px;
 }
